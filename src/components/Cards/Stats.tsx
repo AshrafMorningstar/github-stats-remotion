@@ -11,6 +11,7 @@ import PullRequest from '../SVGs/pull-request';
 import Star from '../SVGs/star';
 import View from '../SVGs/view';
 import { AnimatedCounter } from '../Effects/AnimatedCounter';
+import { GlassCard } from '../Effects/GlassCard';
 
 export function Stats({ userStats }: { userStats: UserStats }) {
 	const frame = useCurrentFrame();
@@ -19,57 +20,65 @@ export function Stats({ userStats }: { userStats: UserStats }) {
 		icon?;
 		label: string;
 		value: number;
+		color?: string;
 	}[] = [
 			{
 				icon: Star,
 				label: 'Stars',
 				value: userStats.starCount,
+                color: 'text-amber-400'
 			},
-			{ icon: Fork, label: 'Forks', value: userStats.forkCount },
-			{ icon: Commit, label: 'Commits', value: userStats.totalCommits },
+			{ icon: Fork, label: 'Forks', value: userStats.forkCount, color: 'text-blue-400' },
+			{ icon: Commit, label: 'Commits', value: userStats.totalCommits, color: 'text-red-400' },
 			{
 				icon: PullRequest,
 				label: 'Pull Requests',
 				value: userStats.totalPullRequests,
+                color: 'text-indigo-400'
 			},
-			{ icon: Open, label: 'Opened Issues', value: userStats.openIssues },
-			{ icon: Close, label: 'Closed Issues', value: userStats.closedIssues },
-			{ icon: View, label: 'Repo Views (2 wks)', value: userStats.repoViews },
+			{ icon: Open, label: 'Issues Opened', value: userStats.openIssues, color: 'text-green-400' },
+			{ icon: Close, label: 'Issues Closed', value: userStats.closedIssues, color: 'text-emerald-400' },
+			{ icon: View, label: 'Repo Views', value: userStats.repoViews, color: 'text-pink-400' },
 			{
 				icon: PlusMinus,
-				label: 'Lines of code changed',
+				label: 'Lines Changed',
 				value: userStats.linesOfCodeChanged,
+                color: 'text-gray-400'
 			},
 			{
 				icon: Contribution,
-				label: 'Total contributions',
+				label: 'Total Contributions',
 				value: userStats.totalContributions,
+                color: 'text-teal-400'
 			},
 		];
 
 	return (
-		<AbsoluteFill className="bg-transparent p-1">
-			<div className="bg-[#282a36] p-3 text-[#f8f8f2] h-full font-mono rounded-xl shadow-2xl">
-				<div className="flex flex-col justify-between h-full">
+		<AbsoluteFill className="bg-transparent p-4">
+			<GlassCard className="p-6 h-full flex flex-col justify-center">
+                <div className="space-y-3">
 					{firstFields.map((field, i) => (
 						<div
 							key={`${field.label}`}
-							className="flex flex-row justify-between gap-2"
-							style={{ opacity: interpolateFactory(frame, i / 5, 1) }}
+							className="flex flex-row justify-between items-center p-2 rounded-lg hover:bg-white/5 transition-colors"
+							style={{ 
+                                opacity: interpolateFactory(frame, i * 2, 10),
+                                transform: `translateX(${interpolateFactory(frame, i * 2, 10) === 1 ? 0 : -20}px)`
+                            }}
 						>
-							<div className="flex gap-2">
-								{field.icon && <field.icon className="w-5 h-5" />}
-								<p className="text-sm whitespace-nowrap my-auto">
-									{field.label}:
+							<div className="flex gap-3 items-center">
+								{field.icon && <div className={`${field.color} drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]`}><field.icon className="w-5 h-5" /></div>}
+								<p className="text-sm font-medium text-gray-200">
+									{field.label}
 								</p>
 							</div>
-							<p className="text-start text-sm my-auto">
-								<AnimatedCounter value={field.value} duration={3} startFrame={(i + 1) * 5} />
+							<p className="text-right text-lg font-bold text-white font-mono drop-shadow-md">
+								<AnimatedCounter value={field.value} duration={3} startFrame={(i + 1) * 3} />
 							</p>
 						</div>
 					))}
-				</div>
-			</div>
+                </div>
+			</GlassCard>
 		</AbsoluteFill>
 	);
 }

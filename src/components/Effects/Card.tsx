@@ -1,5 +1,6 @@
 import {AbsoluteFill} from 'remotion';
 import {MainProps} from '../../config';
+import {Background} from './Background';
 
 type CardProps = {
   children: React.ReactNode;
@@ -12,8 +13,11 @@ export function Card({children, userStats}: CardProps) {
   }
 
   return (
-    <AbsoluteFill className="bg-transparent p-1">
-      {children}
+    <AbsoluteFill className="bg-transparent">
+        <Background />
+        <AbsoluteFill className="p-1">
+            {children}
+        </AbsoluteFill>
     </AbsoluteFill>
   );
-} 
+}

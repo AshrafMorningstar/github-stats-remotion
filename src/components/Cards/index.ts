@@ -8,6 +8,7 @@ import { LanguagesContent } from './LanguagesContent';
 import { MainStatsCards } from './MainStatsCards';
 import { ReadmeCard } from './ReadmeCard';
 import { Stats } from './Stats';
+import { StatsContent } from './StatsCard';
 import { TopLanguagesCard } from './TopLanguagesCard';
 export type CardConfig = {
   id: string;
@@ -62,5 +63,10 @@ export const cards: CardConfig[] = [
     component: TopLanguagesCard,
     height: 232,
   },
-
-]; 
+  {
+      id: 'dashboard',
+      component: StatsContent,
+      height: 720,
+      width: 1280,
+  }
+];

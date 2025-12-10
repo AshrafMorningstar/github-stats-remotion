@@ -17,6 +17,7 @@
 		"render:activity-overview": "remotion render --props ./input.json activity-overview out/activity-overview.gif",
 		"render:commit-streak": "remotion render --props ./input.json commit-streak out/commit-streak.gif",
 		"render:top-languages": "remotion render --props ./input.json top-languages out/top-languages.gif",
+        "render:dashboard": "remotion render --props ./input.json dashboard out/dashboard.gif",
 		"upgrade": "remotion upgrade",
 		"test": "eslint src --ext ts,tsx,js,jsx && tsc"
 	},
