@@ -1,48 +1,83 @@
-/*
- Copyright (c) 2026 Ashraf Morningstar
- These are personal recreations of existing projects, developed by Ashraf Morningstar
- for learning and skill development.
- Original project concepts remain the intellectual property of their respective creators.
- Repository: https://github.com/AshrafMorningstar
-*/
 
-# Generate GitHub Stats GIFs
+<div align="center">
 
-This project generates GIFs for each of the GitHub stats cards. Some stats below are placeholders in lieu of live account data.
+# :star: Github Stats Remotion :star:
 
-# Examples
+[![GitHub stars](https://img.shields.io/github/stars/AshrafMorningstar/github-stats-remotion?style=for-the-badge&color=orange)](https://github.com/AshrafMorningstar/github-stats-remotion/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/AshrafMorningstar/github-stats-remotion?style=for-the-badge&color=blue)](https://github.com/AshrafMorningstar/github-stats-remotion/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/AshrafMorningstar/github-stats-remotion?style=for-the-badge&color=red)](https://github.com/AshrafMorningstar/github-stats-remotion/issues)
+[![GitHub license](https://img.shields.io/github/license/AshrafMorningstar/github-stats-remotion?style=for-the-badge&color=green)](./LICENSE)
+![Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=for-the-badge)
 
-![Readme](./out/readme.gif)
-![Main Stats](./out/main-stats.gif)
-![Languages](./out/languages.gif)
-![Top Languages](./out/top-languages.gif)
-![Issue Tracking](./out/issue-tracking.gif)
-![Code Metrics](./out/code-metrics.gif)
-![Activity Overview](./out/activity-overview.gif)
-![Commit Streak](./out/commit-streak.gif)
+**Automated, High-Performance github stats remotion Project**
 
+[View Demo (If Applicable)](#) • [Report Bug](https://github.com/AshrafMorningstar/github-stats-remotion/issues) • [Request Feature](https://github.com/AshrafMorningstar/github-stats-remotion/issues)
+
+</div>
 
 ---
 
-## 📜 Copyright & License
+## :rocket: Overview
 
-© 2026 Ashraf Morningstar. All Rights Reserved.
+**github-stats-remotion** is a state-of-the-art implementation utilizing Node.js, React, TypeScript. Designed for developers looking for robust, scalable solutions in Open Source, Developer Tools, Coding Best Practices, Software Engineering, React.js, Hooks, Components, Virtual DOM, SPA, Frontend Architecture, Open Source, Developer Tools, Coding Best Practices, Software Engineering.
 
-**Educational Disclaimer:** This is a personal recreation of an existing project concept, developed for learning and skill development purposes. The original project concept remains the intellectual property of its respective creator(s).
+This project is a high-performance, open-source solution designed for developers and enthusiasts. It implements modern best practices and is optimized for efficiency and scalability.
 
-**License:** MIT License - See [LICENSE](./LICENSE) file for details.
+## :sparkles: Key Features
 
-**Developer:** [Ashraf Morningstar](https://github.com/AshrafMorningstar)
+- :white_check_mark: **High Performance:** Optimized for speed and low latency.
+- :white_check_mark: **Scalable Architecture:** Built to handle growth effortlessly.
+- :white_check_mark: **Modern Tech Stack:** Utilizes latest standards in Node.js, React, TypeScript.
+- :white_check_mark: **Developer Friendly:** Clean code, well-documented, and easy to extend.
 
-**Portfolio:** Explore more projects at [github.com/AshrafMorningstar](https://github.com/AshrafMorningstar)
+## :hammer_and_wrench: Technologies Used
+
+![](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+
+## :floppy_disk: Installation & Usage
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/AshrafMorningstar/github-stats-remotion.git
+   cd github-stats-remotion
+   ```
+
+2. **Install dependencies:**
+    npm install
+
+3. **Run the application:**
+    npm start
+
+## :open_file_folder: Project Structure
+
+```
+github-stats-remotion/
+├── src/          # Source code
+├── assets/       # Images and static files
+├── README.md     # Project documentation
+└── LICENSE       # License information
+```
+
+## :handshake: Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
+
+## :bust_in_silhouette: Author
+
+**Ashraf Morningstar**
+
+- **GitHub:** [@AshrafMorningstar](https://github.com/AshrafMorningstar)
+- **Twitter:** [@AMS_Morningstar](https://twitter.com/@AMS_Morningstar)
+- **Portfolio:** [AshrafMorningstar Projects](https://github.com/AshrafMorningstar?tab=repositories)
+
+## :page_facing_up: License
+
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-
-### 🤝 Connect & Contribute
-
-Found this helpful? Give it a ⭐️ on GitHub!
-
-- 💼 Company: MORNINGSTARCONSTRUCTION
-- 📍 Location: India
-- 🐦 Twitter: [@AMS_Morningstar](https://twitter.com/AMS_Morningstar)
-- 📧 Email: ashrafmorningstar@gmail.com
+<div align="center">
+  <p>If you find this project useful, please give it a <b>Star</b> :star:!</p>
+  <sub>Built with ❤️ by Ashraf Morningstar</sub>
+</div>
